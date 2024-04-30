@@ -1,0 +1,3 @@
+#!/root/.asdf/shims/node
+
+console.log("Hello, world!");
