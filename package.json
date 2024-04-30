@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "mhartl-palindrome": "^0.1.0",
+    "mhartl-palindrome": "^0.2.1",
     "watchify": "^4.0.0"
   }
 }
