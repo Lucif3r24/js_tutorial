@@ -1,6 +1,9 @@
 {
   "dependencies": {
+    "jsdom": "^24.0.0",
     "mhartl-palindrome": "^0.2.1",
+    "request": "^2.88.2",
+    "urllib": "^3.24.0",
     "watchify": "^4.0.0"
   }
 }

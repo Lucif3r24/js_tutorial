@@ -1,0 +1,19 @@
+#!/root/.asdf/shims/node
+
+let fs = require("fs");
+let Phrase = require("mhartl-palindrome");
+let palindromes = [];
+
+let text = fs.readFileSync("phrases.txt","utf-8");
+
+text.split("\n").forEach(line => {
+	let phrase = new Phrase(line);
+	if (phrase.palindrome()) {
+		palindromes.push(line)
+	}
+});
+
+fs.writeFile("palindromes.txt", palindromes.join("\n"), (err) => {
+	if(err) throw err; 
+	console.log("The file has been saved !");
+});
